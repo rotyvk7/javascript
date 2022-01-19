@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+    <style>
+        button{
+            height: 70px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="res">
+        <p>O resultado vai aparecer aqui!</p>
+    </section>
+
+    <script>
+        window.alert("Seja bem vindo ao meu site!")
+        function calcular(){
+            var numero = Number(prompt('Digite um numero'))
+            resultado1 = numero + numero
+            resultado2 = numero / 2
+
+            res.innerHTML = `<p>O dobro de ${numero} é ${resultado1} e a metade é ${resultado2}</p>`
+        }
+    </script>
+</body>
+</html>
