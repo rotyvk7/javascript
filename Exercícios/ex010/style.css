@@ -1,0 +1,9 @@
+body{
+    font: normal 13pt Arial;
+}
+
+button{
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+}
