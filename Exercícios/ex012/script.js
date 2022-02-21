@@ -1,8 +1,8 @@
 function calcular(){
     let valor = document.getElementById('res')
 
-    var num1 = Number(prompt(`Digite um número`))
-    var num2 = Number(prompt(`Digite outro número`))
+    let num1 = Number(prompt(`Digite um número`))
+    let num2 = Number(prompt(`Digite outro número`))
 
     if(num1>num2){
         valor.innerHTML = (`<p>Analisando os valores ${num1} e ${num2} o maior valor é <strong>${num1}</strong></p>`)
