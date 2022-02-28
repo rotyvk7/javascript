@@ -1,10 +1,12 @@
 function carregar(){
     var msg = document.getElementById('msg')
     img = document.getElementById('img')
-    var agora = new Date()
-    var hora = agora.getHours()
-    var hora2 = agora.getMinutes()
-    msg.innerHTML = `Agora são ${hora} horas e ${hora2} minutos`
+    let agora = new Date()
+    let hora = agora.getHours()
+    let hora2 = agora.getMinutes()
+    let hora3 = agora.getSeconds()
+
+    msg.innerHTML = `Agora são ${hora} horas e ${hora2} minutos e ${hora3} segundos`
 
     if(hora >= 5 && hora <= 12){
         //BOM DIA!
