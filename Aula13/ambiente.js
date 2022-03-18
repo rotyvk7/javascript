@@ -20,6 +20,6 @@ do {
     console.log(`fatia ${c}`)
     c++
 }
-while (c <= 500){
+while (c <= 5){
 
 }
