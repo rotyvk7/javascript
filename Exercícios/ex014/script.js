@@ -1,24 +1,19 @@
 function sistema(){
     var res = document.getElementById('res')
 
-    let today2 = new Date()
-    let dia = today2.getDate()
+    let meses = new Array ('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez')
+    let semana = new Array('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb')
 
-    var Xmas95 = new Date()
-    var month = Xmas95.getUTCMonth()
+    let now = new Date()
+    let dia = now.getDate()
 
-    let today = new Date()
-    let year = today.getUTCFullYear()
+    let month = now.getMonth()
+    let year = now.getUTCFullYear()
+    let hora = now.getHours()
+    let minutos = now.getMinutes()
+    let segundos = now.getSeconds()
+    var weekday = now.getDay();
 
-    let today3 = new Date()
-    let hora = today3.getHours()
-
-    let today4 = new Date()
-    let minutos = today4.getMinutes()
-    
-    let today5 = new Date()
-    let segundos = today5.getSeconds()
-
-    res.innerHTML = `<p>Dia: <mark> ${dia} </mark></p> <p>Mês: <mark>${month} </mark></p> <p> Ano: <mark>${year}</mark></p> <p> Hora: <mark> ${hora}</mark></p>
+    res.innerHTML = `<p>Dia: <mark> ${dia} </mark></p> <p>Mês: <mark>${meses[month]} </mark></p> <p> Ano: <mark>${year}</mark></p> <p> Dia da semana: <mark>${semana[weekday]}</mark> </p> <p> Hora: <mark> ${hora}</mark></p>
     <p>Minutos: <mark> ${minutos}</mark></p> <p>Segundos: <mark>${segundos}</mark></p>`
 }
