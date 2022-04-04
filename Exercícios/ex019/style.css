@@ -1,0 +1,9 @@
+body{
+    font: normal 13pt Arial;
+}
+
+input{
+    width: 185px;
+    height: 85px;
+    font-size: 17px;
+}

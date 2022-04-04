@@ -12,7 +12,7 @@ function sistema(){
     let hora = now.getHours()
     let minutos = now.getMinutes()
     let segundos = now.getSeconds()
-    var weekday = now.getDay();
+    var weekday = now.getDay()
 
     res.innerHTML = `<p>Dia: <mark> ${dia} </mark></p> <p>Mês: <mark>${meses[month]} </mark></p> <p> Ano: <mark>${year}</mark></p> <p> Dia da semana: <mark>${semana[weekday]}</mark> </p> <p> Hora: <mark> ${hora}</mark></p>
     <p>Minutos: <mark> ${minutos}</mark></p> <p>Segundos: <mark>${segundos}</mark></p>`
