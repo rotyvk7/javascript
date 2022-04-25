@@ -11,19 +11,12 @@ function save(){
         let n = Number(num.value)
         lista.push(n)
         
-        do {
-            option.text = numlista
-            res.appendChild(option)
-            n++
+        for (c = 1; c <= 1; c++ ){
+            let item = document.createElement('option')
+            item.text += `O valor adicionado foi ${n}`
+            res.appendChild(item)
         }
-        while (n < 1){
-        
-        }
-        
-        /*
-            option.text = numlista
-            console.log('O valor adicionado foi', option,numlista)
-            res.appendChild(option) */
+                
     }
        
 }
